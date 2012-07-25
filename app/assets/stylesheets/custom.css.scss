@@ -2,12 +2,16 @@
 
 /* universal */
 
+
+
 html {
   overflow-y: scroll;
+  
 }
 
 body {
   padding-top: 60px;
+  
 }
 
 section {
@@ -62,14 +66,16 @@ p {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 9x;
   font-weight: bold;
   line-height: 1;
+  
 }
 
 #logo:hover {
   color: #fff;
   text-decoration: none;
+   
 }
 
 
@@ -80,10 +86,12 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #999;
+  
 }
 
 footer a {
   color: #555;
+  
 }  
 
 footer a:hover { 
@@ -277,3 +285,20 @@ input, textarea, select, .uneditable-input {
   @extend .control-group;
   @extend .error;
  }
+ 
+
+
+/* users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:last-child {
+      border-bottom: 1px solid $grayLighter;
+    }
+  }
+}
